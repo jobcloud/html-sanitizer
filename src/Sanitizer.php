@@ -42,7 +42,7 @@ class Sanitizer implements SanitizerInterface
      */
     private $logger;
 
-    public function __construct(DomVisitorInterface $domVisitor, int $maxInputLength, ?ParserInterface $parser = null, LoggerInterface $logger = null)
+    public function __construct(DomVisitorInterface $domVisitor, int $maxInputLength, ?ParserInterface $parser = null, ?LoggerInterface $logger = null)
     {
         $this->domVisitor = $domVisitor;
         $this->maxInputLength = $maxInputLength;
